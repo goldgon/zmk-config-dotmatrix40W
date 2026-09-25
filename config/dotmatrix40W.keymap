@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "keycode_japanese.h"
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
