@@ -45,6 +45,20 @@
 #define SCRL_LEFT_FAST MOVE_X(-35)
 #define SCRL_RIGHT_FAST MOVE_X(35)
 
+
+&mt { 
+    flavor = "balanced"; 
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>; 
+};
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <200>; 
+    quick-tap-ms = <150>; 
+};
+
+
 / {
     behaviors {
         encoder_scroll_v: encoder_scroll_v {
@@ -220,17 +234,6 @@
         };
     };
 
-&mt { 
-    flavor = "balanced"; 
-    tapping-term-ms = <200>;
-    quick-tap-ms = <150>; 
-};
-
-&lt {
-    flavor = "balanced";
-    tapping-term-ms = <200>; 
-    quick-tap-ms = <150>; 
-};
 
 
 
