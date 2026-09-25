@@ -339,12 +339,6 @@
         compatible = "zmk,keymap";
 
         layer_0 {
-            // -------------------------------------------------------------------------------------------------
-            // | - / = |   Q   |   W   |   E   |   R   |   T   |   Y   |   U   |   I   |   O   |   P   | BSPC  |
-            // |  TAB  |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   | ; / + | : / * |
-            // | SHIFT |   Z   |   X   |   C   |   V   |   B   |   N   |   M   | , / < | . / > |  UP   | / / ? |
-            // |  L1   | CTRL  |  ALT  | EISU  |     SPACE     |     ENTER     | KANA  | LEFT  | DOWN  | RIGHT |
-            // -------------------------------------------------------------------------------------------------
             bindings = <
 
             &kp ESCAPE      &lt 5 Q    &lt 6 E    &lt 7 U     &kp P           &none &none   &kp D        &lt 7 T       &lt 6 R     &lt 5 W     &mkp MB1
@@ -360,17 +354,16 @@
         };
 
         layer_1 {
-            // -------------------------------------------------------------------------------------------------
-            // |  ESC  |  F10  |  F11  |  F12  | ; / + |       |       | : / * |   +   | 7 / ' | 8 / ( | 9 / ) |
-            // |       |  F7   |  F8   |  F9   | [ / { |       |       | ] / } |   -   | 4 / $ | 5 / % | 6 / & |
-            // |       |  F4   |  F5   |  F6   | @ / ` | ^ / ~ | \ / _ | \ / | |   *   | 1 / ! | 2 / " | 3 / # |
-            // |       |  F1   |  F2   |  F3   |      L2       |      DEL      |   /   |   0   |   .   |   =   |
-            // -------------------------------------------------------------------------------------------------
+ 
             bindings = <
-            &kp ESC  &kp F10  &kp F11  &kp F12  &moF  &none  &none  &moG  &kp KP_PLUS      &mo7    &mo8        &mo9
-            &trans   &kp F7   &kp F8   &kp F9   &moE  &none  &none  &moH  &kp KP_MINUS     &kp N4  &kp N5      &mo6
-            &trans   &kp F4   &kp F5   &kp F6   &moD  &moB   &moI   &moC  &kp KP_MULTIPLY  &kp N1  &mo2        &kp N3
-            &trans   &kp F1   &kp F2   &kp F3   &mo 2            &kp DEL  &kp KP_DIVIDE    &mo0    &kp KP_DOT  &kp KP_EQUAL
+
+            &kp 0x38      &none      &kp UP     &none      &none                         &none &none                    &kp TAB        &kp UP     &kp JP_SQT  &kp JP_DQT  &mkp MB2
+
+          &kp JP_SEMI   &kp LEFT   &kp GRAVE  &kp GRAVE  &kp MINUS                     &none  &none                    &kp BACKSPACE  &kp SPACE  &kp TAB     &kp ENTER   &kp COMMA
+
+            &kp JP_COLON  &none      &none      &none      &none &kp LC(RG(LEFT))             &kp LG(RC(RIGHT))             &kp DELETE     &none      &none       &none       &mt LCTRL PERIOD
+
+            &kp A           &kp A      &kp A      &kp A         &kp A                                                                  &kp A           &kp A      &kp A      &kp A         &kp A
             >;
 
             sensor-bindings = <&encoder_scroll_h>;
