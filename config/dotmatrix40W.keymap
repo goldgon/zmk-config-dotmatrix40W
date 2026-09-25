@@ -387,11 +387,16 @@
 
         layer_3 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+
+     &none        &kp HOME   &kp UP     &kp PAGE_UP      &none           &none &none                        &kp TAB          &kp N7          &kp N8        &kp N9         &mkp MB3
+                &none        &kp LEFT   &kp DOWN   &kp RIGHT        &none  &none                   &none       &kp BACKSPACE  &kp N4          &mt RGUI N5        &kp N6         &kp ENTER
+                &none        &kp END    &none      &kp PAGE_DOWN    &none      &kp TAB             &none           &kp N0         &kp N1          &kp N2        &kp N3         &mt LCTRL PERIO
+
+            &kp A           &kp A      &kp A      &kp A         &kp A                                                                  &kp A           &kp A      &kp A      &kp A         &kp A
             >;
+            sensor-bindings = <&encoder_backlight>;
+
+
         };
 
         layer_4 {
@@ -401,6 +406,8 @@
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
+            sensor-bindings = <&encoder_backlight>;
+
         };
     };
 };
