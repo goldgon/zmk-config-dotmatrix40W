@@ -45,6 +45,12 @@
 #define SCRL_LEFT_FAST MOVE_X(-35)
 #define SCRL_RIGHT_FAST MOVE_X(35)
 
+&mmv {
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+    trigger-period-ms = <10>;
+    delay-ms = <0>;
+};
 
 &mt { 
     flavor = "balanced"; 
