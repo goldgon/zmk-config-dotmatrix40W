@@ -370,17 +370,16 @@
         };
 
         layer_2 {
-            // -------------------------------------------------------------------------------------------------
-            // |       |       |       |       |       |       |       |       |       |       |       | BTCLR |
-            // |       |       |       |       |       |       |       |       |       |       |       |       |
-            // |       |       |       |       |       |       |       |       |       | BT 1  | BT 2  | BT 3  |
-            // |       |       |       |       |               |               |       | BT 0  |       |       |
-            // -------------------------------------------------------------------------------------------------
+
             bindings = <
-            &none  &none  &none  &none  &none  &none  &none  &none  &none  &none         &none         &bt BT_CLR
-            &none  &none  &none  &none  &none  &none  &none  &none  &none  &none         &none         &none
-            &none  &none  &none  &none  &none  &none  &none  &none  &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-            &none  &none  &none  &none  &none                &none  &none  &bt BT_SEL 0  &none         &none
+
+         &none        &kp JP_LT      &kp JP_EQUAL   &kp JP_RT    &kp JP_PRCNT       &none &none                            &kp JP_DLLR   &kp JP_PLUS  &kp JP_CARET      &kp JP_SLASH  &mkp MB3
+
+         &kp JP_LBKT  &kp JP_LPAR    &kp JP_AT      &kp JP_RPAR  &kp JP_RBKT      &none                   &none       &kp JP_QMARK  &kp JP_HASH  &kp DOUBLE_QUOTES &kp LS(0x87)  &kp LS(0x1e)
+
+         &kp JP_TILDE &kp JP_LBRC    &kp JP_AMPS    &kp JP_RBRC  &none            &none                 &none         &kp JP_YEN    &none        &kp JP_SQT        &kp JP_PIPE   &none
+
+            &kp A           &kp A      &kp A      &kp A         &kp A                                                                  &kp A           &kp A      &kp A      &kp A         &kp A
             >;
 
             sensor-bindings = <&encoder_backlight>;
