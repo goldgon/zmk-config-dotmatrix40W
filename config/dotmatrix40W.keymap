@@ -372,7 +372,7 @@
             &mo 1           &mo 1      &mo 1     &mo 1        &kp LC(RG(LEFT))             &kp LG(RC(RIGHT))          &mo 1      &mo 1      &mo 1         &mo 1
             >;
 
-            sensor-bindings = <&encoder_arrow_v>;
+            sensor-bindings = <&encoder_mouse_v>;
         };
 
         layer_1 {
