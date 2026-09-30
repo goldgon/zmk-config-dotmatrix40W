@@ -38,6 +38,9 @@
 #define JP_HANZEN       GRAVE             // Han/Zen
 #define JP_BSLH         INT1              // Backslash
 
+
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
 // Custom scroll values to ensure a single encoder click produces enough velocity
 
 #define SCRL_UP_FAST   MOVE_Y(35)
